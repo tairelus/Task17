@@ -16,6 +16,14 @@ public class Main {
         computer.setVideoCard("NVIDIA GeForce GTX 750 Ti", 2, "GDDR5");
         computer.setDisplay("23″, IPS matrix, DVI/HDMI");
         computer.setChassis("Middle Tower ATX, 450 W");
+        computer.setAudioCard("Realtek HD Audio");
+        //Accessories
+        computer.setKeyboard("Logitech G410 Atlas Spectrum");
+        computer.setMouse("Lenovo Y Gaming Precision Mouse");
+        computer.setWebcam("Logitech HD Webcam C270");
+        computer.setHeadset("Lenovo Y Gaming Surround Sound Headset");
+        computer.setAudioSystem("Logitech Speaker System Z320 ");
+        computer.setPrice(710);
 
         computerStore.addDesktop(computer);
 
@@ -28,6 +36,14 @@ public class Main {
         computer.setVideoCard("AMD Radeon R9 380", 2, "GDDR5");
         computer.setDisplay("23″, матрица IPS/e-IPS/PLS, DVI");
         computer.setChassis("Middle Tower ATX, 500 W");
+        computer.setAudioCard("Realtek HD Audio");
+        //Accessories
+        computer.setKeyboard("Logitech G410 Atlas Spectrum");
+        computer.setMouse("Lenovo Y Gaming Precision Mouse");
+        computer.setWebcam("Logitech HD Webcam C310");
+        computer.setHeadset("Lenovo Y Gaming Surround Sound Headset");
+        computer.setAudioSystem("Logitech Speaker System Z320 ");
+        computer.setPrice(1110);
 
         computerStore.addDesktop(computer);
 
@@ -40,6 +56,14 @@ public class Main {
         computer.setVideoCard("NVIDIA GeForce GTX 970", 4, "GDDR5");
         computer.setDisplay("23-27″, матрица IPS/PLS, DVI/HDMI/DisplayPort");
         computer.setChassis("Middle Tower ATX, 650 W");
+        computer.setAudioCard("Realtek HD Audio");
+        //Accessories
+        computer.setKeyboard("Logitech G410 Atlas Spectrum");
+        computer.setMouse("Lenovo Y Gaming Precision Mouse");
+        computer.setWebcam("Logitech HD Webcam C930e");
+        computer.setHeadset("Lenovo Y Gaming Surround Sound Headset");
+        computer.setAudioSystem("Logitech Speaker System Z320 ");
+        computer.setPrice(1695);
 
         computerStore.addDesktop(computer);
 
@@ -57,6 +81,15 @@ HDD, 1000.0 Gb, 7200 rpm
 NVIDIA GeForce GTX 750 Ti, 2.0 Gb, GDDR5
 Display: 23″, IPS matrix, DVI/HDMI
 Chassis: Middle Tower ATX, 450 W
+Audio card: Realtek HD Audio
+Accessories:
+	Logitech G410 Atlas Spectrum
+	Lenovo Y Gaming Precision Mouse
+	Logitech HD Webcam C270
+	Lenovo Y Gaming Surround Sound Headset
+	Logitech Speaker System Z320
+
+Price:  710.0
 --------------------------------------------
 
 Optimal game PC
@@ -66,6 +99,15 @@ HDD, 2000.0 Gb, 7200 rpm
 AMD Radeon R9 380, 2.0 Gb, GDDR5
 Display: 23″, матрица IPS/e-IPS/PLS, DVI
 Chassis: Middle Tower ATX, 500 W
+Audio card: Realtek HD Audio
+Accessories:
+	Logitech G410 Atlas Spectrum
+	Lenovo Y Gaming Precision Mouse
+	Logitech HD Webcam C310
+	Lenovo Y Gaming Surround Sound Headset
+	Logitech Speaker System Z320
+
+Price:  1110.0
 --------------------------------------------
 
 Advanced game PC
@@ -75,5 +117,14 @@ HDD, 2000.0 Gb, 7200 rpm
 NVIDIA GeForce GTX 970, 4.0 Gb, GDDR5
 Display: 23-27″, матрица IPS/PLS, DVI/HDMI/DisplayPort
 Chassis: Middle Tower ATX, 650 W
+Audio card: Realtek HD Audio
+Accessories:
+	Logitech G410 Atlas Spectrum
+	Lenovo Y Gaming Precision Mouse
+	Logitech HD Webcam C930e
+	Lenovo Y Gaming Surround Sound Headset
+	Logitech Speaker System Z320
+
+Price:  1695.0
 --------------------------------------------
  */

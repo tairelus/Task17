@@ -1,11 +1,14 @@
 package bjs.task17.computers;
 
+import java.util.ArrayList;
+import java.util.ListIterator;
+
 /**
  * Created by YM on 26.11.2015.
  * Class Computer presents a desktop computer
  */
 
-public class Desktop extends Computer{
+public class Desktop extends Computer implements Accessories{
 	/**Describes motherboard type and model*/
 	private String motherboard;
 	/**Describes video card*/
@@ -14,8 +17,13 @@ public class Desktop extends Computer{
 	private String display;
 	/**Chassis and power supply*/
 	private String chassis;
+	/**Audio card*/
+	private String audioCard;
 	/**Price*/
 	private double price;
+
+	/**Computer accessories. Can be implemented as HashMap in next versions to provide random access to each element*/
+	ArrayList<String> accessories;
 
 	/**
 	 * Presents information about video card
@@ -64,6 +72,7 @@ public class Desktop extends Computer{
 
 	public Desktop() {
 		videoCard = new VideoCard();
+		accessories = new ArrayList<String>();
 	}
 
     @Override
@@ -72,6 +81,9 @@ public class Desktop extends Computer{
 		result += videoCard.toString();
 		result += "Display: " + display + "\n";
 		result += "Chassis: " + chassis + "\n";
+		result += "Audio card: " + audioCard + "\n";
+		result += "Accessories: " + getAccessories() + "\n";
+		result += "Price:  " + price + "\n";
 
         return result;
     }
@@ -110,10 +122,72 @@ public class Desktop extends Computer{
 	}
 
 	/**
+	 * Sets type of the audio card
+	 * @param audioCard Type of the audio card
+     */
+	public void setAudioCard(String audioCard) {
+		this.audioCard = audioCard;
+	}
+
+	/**
 	 * Sets price
 	 * @param price Price
      */
 	public void setPrice(double price) {
 		this.price = price;
+	}
+
+	/**
+	 * Sets the keyboard
+	 * @param keyboard
+     */
+	public void setKeyboard(String keyboard) {
+		accessories.add(keyboard);
+	}
+
+	/**
+	 * Sets the mouse
+	 * @param mouse
+     */
+	public void setMouse(String mouse) {
+		accessories.add(mouse);
+	}
+
+	/**
+	 * Sets the web camera
+	 * @param webcam
+     */
+	public void setWebcam(String webcam) {
+		accessories.add(webcam);
+	}
+
+	/**
+	 * Sets the headset
+	 * @param headset
+     */
+	public void setHeadset(String headset) {
+		accessories.add(headset);
+	}
+
+	/**
+	 * Sets the audio system
+	 * @param audioSystem
+	 */
+	public void setAudioSystem(String audioSystem) {
+		accessories.add(audioSystem);
+	}
+
+	/**
+	 * Returns all accessories as string
+	 * @return
+     */
+	public String getAccessories() {
+		String result = "\n";
+
+		for (String accessory: accessories) {
+			result += "\t" + accessory + "\n";
+		}
+
+		return result;
 	}
 }
